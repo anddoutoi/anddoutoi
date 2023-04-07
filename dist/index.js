@@ -10,7 +10,7 @@ meow(`
 `, {
   importMeta: import.meta
 });
-console.log(await terminalImage.file("assets/avatar.jpg", {
+console.log(await terminalImage.file("./assets/avatar.jpg", {
   width: 48
 }));
 render( /*#__PURE__*/React.createElement(App, null));

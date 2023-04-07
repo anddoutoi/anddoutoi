@@ -7,3 +7,4 @@ import terminalImage from "terminal-image";
 //import App from "./app.js";
 
 console.log("ESM SAYS HELLO");
+console.log(await terminalImage.file("./assets/avatar.jpg", {width: 48}));

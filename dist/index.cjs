@@ -3,16 +3,20 @@
 
 var _react = _interopRequireDefault(require("react"));
 var _ink = require("ink");
-var _meow = _interopRequireDefault(require("meow"));
 var _terminalImage = _interopRequireDefault(require("terminal-image"));
-var _app = _interopRequireDefault(require("./app.js"));
+var _app = _interopRequireDefault(require("./app.cjs"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-(0, _meow.default)(`
+//import meow from "meow";
+
+/*
+meow(
+	`
 	Usage
 	  $ anddoutoi
-`, {
-  importMeta: import.meta
-});
+`,
+	{importMeta: import.meta},
+);
+*/
 console.log(await _terminalImage.default.file("./assets/avatar.jpg", {
   width: 48
 }));

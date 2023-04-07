@@ -8,9 +8,9 @@ var _nodeProcess = _interopRequireDefault(require("node:process"));
 var _react = _interopRequireDefault(require("react"));
 var _ink = require("ink");
 var _open = _interopRequireDefault(require("open"));
-var _heading = _interopRequireDefault(require("./heading.js"));
-var _singleChoice = _interopRequireDefault(require("./single-choice.js"));
-var _tagBox = _interopRequireDefault(require("./tag-box.js"));
+var _heading = _interopRequireDefault(require("./heading.cjs"));
+var _singleChoice = _interopRequireDefault(require("./single-choice.cjs"));
+var _tagBox = _interopRequireDefault(require("./tag-box.cjs"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const tags = ["React", "TanStack Query", "Chakra UI", "GraphQL", "JavaScript", "Apollo", "TypeScript", "Vite"].sort().map(tagLabel => ({
   children: tagLabel

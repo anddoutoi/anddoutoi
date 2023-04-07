@@ -10,7 +10,7 @@
     "anddoutoi": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "babel --out-dir=./dist --out-file-extension=.mjs ./src",
+    "-build-": "babel --out-dir=./dist --out-file-extension=.cjs ./src",
     "prebuild": "npm run clean",
     "clean": "rimraf ./dist",
     "format": "prettier --write .",

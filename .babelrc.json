@@ -1,6 +1,7 @@
 {
 	"plugins": [
-		["babel-plugin-replace-import-extension", { "extMapping": { ".js": ".mjs" }}]
+		["babel-plugin-replace-import-extension", { "extMapping": { ".js": ".cjs" }}],
+		"@babel/plugin-transform-modules-commonjs"
 	],
 	"presets": ["@babel/preset-react"]
 }

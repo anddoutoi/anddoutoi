@@ -7,10 +7,10 @@
     "node": "^16 || ^18"
   },
   "bin": {
-    "anddoutoi": "./dist/index.cjs"
+    "anddoutoi": "./esm/index.js"
   },
   "scripts": {
-    "-build-": "babel --out-dir=./dist --out-file-extension=.cjs ./src",
+    "-build-": "babel --out-dir=./dist ./src",
     "prebuild": "npm run clean",
     "clean": "rimraf ./dist",
     "format": "prettier --write .",

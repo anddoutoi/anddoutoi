@@ -10,7 +10,7 @@ import terminalImage from "terminal-image";
 //import App from "./app.js";
 
 console.log("ESM SAYS HELLO");
-console.log(await terminalImage.file(`${__dirname(import.meta.url)}/avatar.jpg`, {width: 48}));
+console.log(await terminalImage.file(`${__dirname(import.meta.url)}/../assets/avatar.jpg`, {width: 48}));
 
 
 

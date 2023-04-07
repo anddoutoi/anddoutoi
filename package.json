@@ -6,7 +6,9 @@
   "engines": {
     "node": "^16 || ^18"
   },
-  "bin": "./dist/index.js",
+  "bin": {
+    "anddoutoi": "./dist/index.js"
+  },
   "scripts": {
     "build": "babel --out-dir=./dist ./src",
     "prebuild": "npm run clean",

@@ -7,19 +7,19 @@
     "node": "^16 || ^18"
   },
   "bin": {
-    "anddoutoi": "./dist/index.js"
+    "anddoutoi": "./dist2/index.js"
   },
   "scripts": {
-    "build": "babel --out-dir=./dist ./src",
+    "build": "babel --out-dir=./dist2 ./src",
     "prebuild": "npm run clean",
-    "clean": "rimraf ./dist",
+    "clean": "rimraf ./dist2",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "./assets/",
-    "./dist/"
+    "./dist2/"
   ],
   "dependencies": {
     "figures": "^5.0.0",

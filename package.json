@@ -6,20 +6,18 @@
   "engines": {
     "node": "^16 || ^18"
   },
-  "bin": {
-    "anddoutoi": "./dist2/index.js"
-  },
+  "bin": "./dist/index.js",
   "scripts": {
-    "build-": "babel --out-dir=./dist2 ./src",
-    "prebuild": "npm run clean",
-    "clean": "rimraf ./dist2",
+    "build-dist": "babel --out-dir=./dist ./src",
+    "prebuild-dist": "npm run clean",
+    "clean": "rimraf ./dist",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "./assets/",
-    "./dist2/"
+    "./dist/"
   ],
   "dependencies": {
     "figures": "^5.0.0",

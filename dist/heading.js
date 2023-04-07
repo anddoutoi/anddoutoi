@@ -1,13 +1,21 @@
-import React from "react";
-import BigText from "ink-big-text";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _inkBigText = _interopRequireDefault(require("ink-big-text"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function Heading(props) {
   const {
     children
   } = props;
-  return /*#__PURE__*/React.createElement(BigText, {
+  return /*#__PURE__*/_react.default.createElement(_inkBigText.default, {
     text: children,
     font: "chrome",
     colors: ["#0F0", "#0C0", "#0A0"]
   });
 }
-export default Heading;
+var _default = Heading;
+exports.default = _default;
